@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playground/html-codeditor</title>
+  <script src="https://kit.fontawesome.com/0e9f577638.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/icon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/ace.css">
+</head>
+<body>
+  <div class="app">
+    <nav>
+      <header>
+        <div id="status">
+          <button id="html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <span>Index.html</span>
+          </button>
+          <button id="css">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <span>Style.css</span>
+          </button>
+          <button id="js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <span>Script.js</span>
+          </button>
+          <button id="web">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+            <span>Preview</span>
+          </button>
+        </div>
+      </header>
+    </nav>
+    <main>
+      
+      <div id="editor-container-html">
+        <div id="editor-html"></div>
+      </div>
+      <div id="editor-container-css">
+        <div id="editor-css"></div>
+      </div>
+      <div id="editor-container-js">
+        <div id="editor-js"></div>
+      </div>
+      <div id="editor-result">
+        <div class="extra">
+          <div class="previewHeader">
+              <button onClick="runAndLoad()" id="refresh">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+              <input readonly type="text" value="http://127.0.0.0.1:3000/index.html" id="addressBar">
+              <button onClick="load()" id="devTool">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </button>
+              <button id="responsive">
+                <i class="fa-solid fa-expand"></i>
+              </button>
+              <button id="openInNew" onClick="openInNewTab()">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+          </div>
+          <!-- <button onClick="runAndLoad()">Refresh Page</button>
+          <a onClick="openInNewTab()"> <button>Open in New Tab</button></a>
+          <button id="responsive">Responsive</button>
+          <button onClick="load()">console</button> -->
+          
+        </div>
+        <iframe id="output" frameborder="0"></iframe>
+      </div>
+      
+      <button id="run">Compile</button>
+      
+    </main>
+  </div>
+  
+  
+  
+  <!-- <script src="js/editor/editor.js"></script> -->
+  <!-- <script src="js/editor/tab.js"></script> -->
+  <!-- <script src="js/console/eruda.js"></script> -->
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script src="js/editor/editor.js"></script>
+  <script src="js/editor/tab.js"></script>
+  <script src="/js/editor/responsive/responsive.js"></script>
+  <script src="/js/editor/open_in_new_tab/newtab.js"></script>
+  <script src="js/console/eruda.js"></script>
+<!-- ... -->
+
+  
+</body>
+</html>
