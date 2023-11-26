@@ -33,8 +33,8 @@ function keepRunning() {
   // You can redirect other console methods if needed
 
   // Example usage
-  //let jscode = editor_js.getValue(); // Assuming "getValue()" is a valid method for retrieving the editor's value
-  //eval(jscode);
+  let jscode = editor_js.getValue(); // Assuming "getValue()" is a valid method for retrieving the editor's value
+  eval(jscode);
 }
 
 // Call the load() function to start the process
